@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.ws.loadingview.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.ws.loadingview.view.WSCircleCD
+                android:id="@+id/load_cd"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+            <com.ws.loadingview.view.WSCircleSun
+                android:id="@+id/load_sun"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/load_cd"/>
+
+            <com.ws.loadingview.view.WSCircleRing
+                android:id="@+id/load_ring"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/load_sun"/>
+
+            <com.ws.loadingview.view.WSCircleFace
+                android:id="@+id/load_face"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/load_cd"/>
+
+
+            <com.ws.loadingview.view.WSCircleJump
+                android:id="@+id/load_jump"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/load_sun"
+                android:layout_toRightOf="@+id/load_face"/>
+
+            <com.ws.loadingview.view.WSGears
+                android:id="@+id/load_gear"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/load_ring"
+                android:layout_toRightOf="@+id/load_jump"/>
+
+            <com.ws.loadingview.view.WSJump
+                android:id="@+id/load_mjump"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/load_face"/>
+
+            <com.ws.loadingview.view.WSLineProgress
+                android:id="@+id/load_line_progress"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/load_mjump"/>
+
+            <com.ws.loadingview.view.WSEatBeans
+                android:id="@+id/load_eat"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/load_line_progress"/>
+
+            <com.ws.loadingview.view.WSFiveStar
+                android:id="@+id/load_five"
+                android:layout_width="100dp"
+                android:layout_toRightOf="@+id/load_mjump"
+                android:layout_height="100dp"
+                android:layout_below="@+id/load_jump"/>
+
+            <com.ws.loadingview.view.WSFiveStar
+            android:id="@+id/load_mfive"
+            android:layout_width="100dp"
+            android:layout_toRightOf="@+id/load_five"
+            android:layout_height="100dp"
+            android:layout_below="@+id/load_jump"/>
+
+            <com.ws.loadingview.view.WSCircleRise
+                android:id="@+id/load_rise"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/load_eat"/>
+
+            <com.ws.loadingview.view.WSCircleBar
+                android:id="@+id/load_bar"
+                android:layout_width="100dp"
+                android:layout_toRightOf="@+id/load_rise"
+                android:layout_height="100dp"
+                android:layout_below="@+id/load_eat"/>
+
+            <com.ws.loadingview.view.WSCircleArc
+                android:id="@+id/load_arc"
+                android:layout_width="100dp"
+                android:layout_toRightOf="@+id/load_bar"
+                android:layout_height="100dp"
+                android:layout_below="@+id/load_eat"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
